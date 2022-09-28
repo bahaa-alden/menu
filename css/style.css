@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(241, 245, 248);
+}
+.container {
+  padding: 80px 15px;
+}
+.container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 500;
+  position: relative;
+}
+.container h2 p {
+  margin-top: 20px;
+  width: 84px;
+  height: 0px;
+  border: 2px solid rgb(197, 157, 95);
+  position: relative;
+  left: 45%;
+}
+.choose {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+}
+.choose span {
+  color: rgb(226, 165, 74);
+  padding: 5px 12px;
+  border: 3px rgb(226, 165, 74);
+  border-radius: 10px;
+  border-style: outset;
+  transition: all 0.3s ease-in;
+  font-weight: 500;
+}
+.choose span:hover {
+  background-color: rgb(226, 165, 74);
+  color: white;
+  cursor: pointer;
+}
+.wrapper {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  transition: all 0.3s ease;
+}
+.wrapper .content {
+  display: flex;
+  gap: 20px;
+  flex-basis: 48%;
+}
+.wrapper .content img {
+  border: 4px rgb(226, 165, 74);
+  border-style: outset;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wrapper .content .pa {
+  height: 100%;
+}
+.pa h4 {
+  font-size: 19px;
+  width: 100%;
+  color: rgb(16, 42, 66);
+  letter-spacing: 1.7px;
+  padding: 0 0 5px;
+  border-bottom: 1px dotted;
+  display: flex;
+  justify-content: space-between;
+}
+.pa h4 span {
+  color: rgb(226, 165, 74);
+}
+.pa p {
+  color: rgb(106, 125, 158);
+  padding: 20px 0;
+  line-height: 1.5;
+}
+
+.wrapper .content .imgs img {
+  display: block;
+  height: 190px;
+}
+@media (max-width: 1115px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    max-width: 700px;
+  }
+}
+@media (max-width: 762px) {
+  .wrapper,
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    flex-basis: 100%;
+    max-width: 400px;
+  }
+  .content h4 {
+    font-size: 17px;
+  }
+  .content p {
+    font-size: 15px;
+  }
+  .content {
+    padding: 0 30px;
+  }
+  .content .imgs {
+    width: 100%;
+  }
+  .content img {
+    width: 100%;
+  }
+}
